@@ -1,0 +1,52 @@
+Number for requester thread = 1
+Number for resolver thread = 1
+Total run time: 9.930215 seconds
+Thread 140621180122880 serviced 5 files.
+
+
+Number for requester thread = 1
+Number for resolver thread = 3
+Total run time: 3.933071 seconds
+Thread 139822067463936 serviced 5 files.
+
+
+Number for requester thread = 3
+Number for resolver thread = 1
+Total run time: 8.994218 seconds
+Thread 140383397766912 serviced 3 files.
+Thread 140383414552320 serviced 2 files.
+Thread 140383406159616 serviced 3 files.
+
+
+Number for requester thread = 3
+Number for resolver thread = 3
+Total run time: 2.750326 seconds
+Thread 139999313917696 serviced 2 files.
+Thread 139999171307264 serviced 3 files.
+Thread 139999322310400 serviced 3 files.
+
+
+Number for requester thread = 5
+Number for resolver thread = 5
+Total run time: 1.582461 seconds
+Thread 140229092321024 serviced 3 files.
+Thread 140229109106432 serviced 4 files.
+Thread 140229100713728 serviced 2 files.
+Thread 140229004490496 serviced 1 files.
+Thread 140229083928320 serviced 4 files.
+
+
+Number for requester thread = 8
+Number for resolver thread = 5
+Total run time: 1.561180 seconds
+Thread 139750610810624 serviced 5 files.
+Thread 139750619203328 serviced 1 files.
+Thread 139750635988736 serviced 5 files.
+Thread 139750652774144 serviced 4 files.
+Thread 139750644381440 serviced 3 files.
+Thread 139750627596032 serviced 2 files.
+Thread 139750602417920 serviced 5 files.
+Thread 139750661166848 serviced 5 files.
+
+
+Based on these performance metrics, the largest performance increases happened moving from 1 thread to 3 or 5 threads. An increase from 5 to 8 threads had a much smaller impact on performance than an increase from 1 to 3 threads. These metrics also suggest that increasing resolver threads has a larger impact than increasing requester threads. When the number of resolver threads was increased from one thread to 3, the program ran 6 seconds faster, while an increase from one requester thread to 3 only sped up the program speed by 1 second. I also noticed that there were significant speed ups when I ran the program with the same input multiple times. This is most likely a result of the computer caching file content that is either regularly or recently used.
