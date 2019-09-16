@@ -1,4 +1,4 @@
-# Programming Assignment Three - CSCI3753 Operating Systems
+# Programming Assignment Three - Operating Systems
 
 Created thread-safe and reentrant code to solve the "Bounded Buffer" problem. Requester threads read in from name files and placed host names into a bounded buffer, and resolver threads read in from the bounded buffer and performed dnslookups to compute IP addresses. Both thread pools wrote output to shared files.
 
